@@ -33,10 +33,6 @@ public class MainActivity extends AppCompatActivity {
     public static String CMD = "0";
 
 
-    //String vidConnection = "http://192.168.1.12:3000";
-    //String vidConnection = "http://techslides.com/demos/sample-videos/small.webm";
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -67,7 +63,7 @@ public class MainActivity extends AppCompatActivity {
         playBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                webView.loadUrl("http://192.168.1.14:8000/stream.mp4");
+                webView.loadUrl("Replace_IP_HERE:8000/stream.mp4");
                 webView.setVisibility(View.VISIBLE);
                 playBtn.setEnabled(false);
                 stopBtn.setEnabled(true);
